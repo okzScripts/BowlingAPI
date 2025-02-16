@@ -15,4 +15,4 @@ Usage instruction:
 Each time the page loads, a game from the backend is generated and passed to the frontend as a JSON-object.
 The JSX then iterates through the data and makes queryselects for the HTML elements showing the results
 
-
+The C# contains some debugging Writelines etc that can be ignored.
