@@ -1,0 +1,165 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+ }
+
+
+ .scoreboard-container {
+   display: flex;
+   flex-direction: column;
+   width: 600px;
+   background-color: #333;
+   color: white;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+
+
+ .round-section {
+   display: flex;
+   justify-content: space-around;
+   background-color: #444;
+   padding: 10px;
+   border-bottom: 2px solid #555;
+ }
+
+ .round-section div {
+   width: 50px;
+   text-align: center;
+   font-weight: bold;
+   border-right: 1px solid #777;
+
+ }
+
+ .round-section div:last-child {
+   border-right: none;
+
+ }
+
+
+ .hit-section {
+   display: flex;
+   justify-content: space-around;
+   padding: 10px;
+   background-color: #555;
+   border-bottom: 2px solid #666;
+ }
+
+ .hit-section>div {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   background-color: #666;
+   border-radius: 5px;
+   margin: 2px;
+   width: 60px;
+   border-right: 1px solid #777;
+
+ }
+
+ .hit-section>div:last-child {
+   border-right: none;
+
+ }
+
+ .hit-section>div>div {
+   width: 50%;
+   text-align: center;
+   padding: 5px;
+   border-bottom: 1px solid #777;
+   background-color: #888;
+   color: white;
+   font-weight: bold;
+ }
+
+ .hit-section>div>div:last-child {
+   border-bottom: none;
+ }
+
+
+ .cumulate-score-section {
+   display: flex;
+   justify-content: space-around;
+   padding: 10px;
+   background-color: #444;
+ }
+
+ .cumulate-score-section div {
+   width: 50px;
+   text-align: center;
+   font-weight: bold;
+   border-right: 1px solid #777;
+
+ }
+
+ .cumulate-score-section div:last-child {
+   border-right: none;
+
+ }
+
+ .roll-ball-button {
+   padding: 10px 20px;
+
+   font-size: 16px;
+
+   font-weight: bold;
+
+   color: white;
+
+   background-color: #4CAF50;
+
+   border: none;
+
+   border-radius: 5px;
+
+   cursor: pointer;
+
+   transition: background-color 0.3s ease;
+
+   margin-top: 20px;
+
+
+ }
+
+ .reset-game-button {
+   padding: 10px 20px;
+
+   font-size: 16px;
+
+   font-weight: bold;
+
+   color: white;
+
+   background-color: #4CAF50;
+
+   border: none;
+
+   border-radius: 5px;
+
+   cursor: pointer;
+
+   transition: background-color 0.3s ease;
+
+   margin-top: 20px;
+
+
+ }
+
+ button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+
+ }
