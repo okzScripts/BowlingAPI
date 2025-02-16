@@ -22,7 +22,7 @@ namespace server
         {
             int pins = 10;
             Console.WriteLine($"Round: {currentRound}");
-            Console.WriteLine("Press any key to make a hit:");
+
 
 
             Ball hit1 = StrikePins(pins);
@@ -34,7 +34,7 @@ namespace server
 
             if (pins > 0)
             {
-                Console.WriteLine("Hit again (second hit)");
+
 
                 hit2 = StrikePins(pins);
                 pins -= hit2.PinsStruck;
@@ -52,7 +52,7 @@ namespace server
 
             if (currentRound == 10 && (hit1.PinsStruck == 10 || (hit1.PinsStruck + (hit2?.PinsStruck ?? 0) == 10)))
             {
-                Console.WriteLine("Bonus hit for final round!");
+
                 bonusBall = StrikePins(10);
             }
 
@@ -96,8 +96,7 @@ namespace server
             }
 
             Console.WriteLine($"\nTotal Score: {runningTotal}");
-            Console.WriteLine("\nPress any key to continue...");
-            Console.ReadKey();
+
         }
 
         public List<Round> NewGame()
