@@ -60,12 +60,9 @@ namespace server
 
             totalScore += newRound.CalcScore(roundList, currentRound - 1);
 
-            if (currentRound == 10)
+            if (currentRound != 10)
             {
-                isEnded = true;
-            }
-            else
-            {
+
                 currentRound++;
             }
 

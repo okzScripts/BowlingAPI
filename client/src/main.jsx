@@ -32,7 +32,8 @@ function HomePage() {
 
 
 
-  const [currentHit, setCurrentHit] = useState(1); 1 = hit1, 2 = hit2, 3 = bonusBall
+  const [currentHit, setCurrentHit] = useState(1);
+  //1 = hit1, 2 = hit2, 3 = bonusBall
   const [roundScore, setRoundScore] = useState("");
 
   function handleRollBall() {
