@@ -5,7 +5,7 @@ namespace server
 {
     public class Game
     {
-        private bool isEnded = false;
+
 
         private int totalScore = 0;
         private int currentRound = 1;
@@ -104,7 +104,7 @@ namespace server
             roundList.Clear();
             totalScore = 0;
             currentRound = 1;
-            isEnded = false;
+
 
             for (int i = 0; i < 10; i++)
             {
